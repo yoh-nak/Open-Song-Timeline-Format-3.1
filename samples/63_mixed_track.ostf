@@ -1,0 +1,81 @@
+{
+  "format": "OSTF",
+  "version": "3.1.0",
+  "ppq": 960,
+  "song": {
+    "title": "Hybrid pitched bass with a drum trigger"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "hybrid",
+      "name": "Hybrid bass and kick",
+      "trackType": "mixed",
+      "preferredView": "auto",
+      "clips": [
+        {
+          "id": "hybrid-clip",
+          "start": 0,
+          "duration": 3840,
+          "notes": [
+            {
+              "id": "bass1",
+              "start": 0,
+              "duration": 960,
+              "pitch": 36
+            },
+            {
+              "id": "k1",
+              "start": 0,
+              "duration": 120,
+              "soundSlotId": "kick"
+            },
+            {
+              "id": "bass2",
+              "start": 960,
+              "duration": 960,
+              "pitch": 38
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "kick",
+      "name": "Kick",
+      "midiMapping": {
+        "standard": "gm1",
+        "note": 36
+      }
+    }
+  ],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

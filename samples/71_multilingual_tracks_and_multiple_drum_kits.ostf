@@ -1,0 +1,275 @@
+{
+  "format": "OSTF",
+  "version": "3.1.0",
+  "ppq": 960,
+  "song": {
+    "title": "和太鼓とラテン・パーカッション",
+    "localizedTitles": {
+      "en": "Taiko and Latin Percussion",
+      "zh-Hans": "太鼓与拉丁打击乐"
+    }
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "sect-intro",
+        "name": "イントロ",
+        "localizedNames": {
+          "en": "Intro",
+          "ko": "인트로"
+        },
+        "start": 0,
+        "duration": 3840
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "trk-taiko",
+      "name": "和太鼓",
+      "localizedNames": {
+        "en": "Taiko Drums",
+        "zh-Hans": "太鼓",
+        "ko": "다이코"
+      },
+      "trackType": "drum",
+      "preferredView": "auto",
+      "drumKitId": "kit-taiko",
+      "instrument": {
+        "name": "和太鼓",
+        "localizedNames": {
+          "en": "Taiko",
+          "zh-Hant": "太鼓"
+        },
+        "family": "percussion"
+      },
+      "clips": [
+        {
+          "id": "clip-taiko",
+          "name": "祭りのリズム",
+          "localizedNames": {
+            "en": "Festival Rhythm"
+          },
+          "start": 0,
+          "duration": 3840,
+          "notes": [
+            {
+              "id": "note-t1",
+              "start": 0,
+              "duration": 120,
+              "soundSlotId": "slot-o-daiko"
+            },
+            {
+              "id": "note-t2",
+              "start": 960,
+              "duration": 120,
+              "soundSlotId": "slot-shime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trk-latin",
+      "name": "ラテン・パーカッション",
+      "localizedNames": {
+        "en": "Latin Percussion",
+        "es": "Percusión latina",
+        "fr": "Percussions latines"
+      },
+      "trackType": "drum",
+      "preferredView": "drumGrid",
+      "drumKitId": "kit-latin",
+      "clips": [
+        {
+          "id": "clip-latin",
+          "start": 0,
+          "duration": 3840,
+          "notes": [
+            {
+              "id": "note-l1",
+              "start": 0,
+              "duration": 120,
+              "soundSlotId": "slot-conga"
+            },
+            {
+              "id": "note-l2",
+              "start": 480,
+              "duration": 120,
+              "soundSlotId": "slot-shaker"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trk-bass",
+      "name": "ベース",
+      "localizedNames": {
+        "en": "Bass",
+        "ar": "باس"
+      },
+      "trackType": "melodic",
+      "preferredView": "pianoRoll",
+      "instrument": {
+        "name": "Synth Bass",
+        "localizedNames": {
+          "ja": "シンセベース",
+          "de": "Synthesizer-Bass"
+        },
+        "family": "bass"
+      },
+      "clips": [
+        {
+          "id": "clip-bass",
+          "start": 0,
+          "duration": 3840,
+          "notes": [
+            {
+              "id": "note-b1",
+              "start": 0,
+              "duration": 960,
+              "pitch": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trk-empty",
+      "name": "追加用ドラム",
+      "localizedNames": {
+        "en": "Additional Drums"
+      },
+      "trackType": "drum",
+      "drumKitId": "kit-taiko",
+      "clips": []
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "slot-o-daiko",
+      "name": "大太鼓",
+      "localizedNames": {
+        "en": "O-daiko",
+        "ja": "大太鼓"
+      },
+      "role": "low-drum",
+      "midiMapping": {
+        "standard": "custom",
+        "note": 36
+      }
+    },
+    {
+      "id": "slot-shime",
+      "name": "締太鼓",
+      "localizedNames": {
+        "en": "Shime-daiko"
+      },
+      "role": "high-drum"
+    },
+    {
+      "id": "slot-conga",
+      "name": "コンガ",
+      "localizedNames": {
+        "en": "Conga",
+        "es": "Conga"
+      },
+      "role": "conga",
+      "midiMapping": {
+        "standard": "gm1",
+        "note": 64
+      }
+    },
+    {
+      "id": "slot-shaker",
+      "name": "シェイカー",
+      "localizedNames": {
+        "en": "Shaker",
+        "fr": "Shaker"
+      },
+      "role": "shaker",
+      "midiMapping": {
+        "standard": "custom",
+        "note": 82
+      }
+    },
+    {
+      "id": "slot-unused",
+      "name": "未使用の鈴",
+      "localizedNames": {
+        "en": "Unused Bells"
+      },
+      "role": "bells"
+    }
+  ],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "com.example.kit-notes.v1": {
+      "version": "example-1",
+      "status": "unverified",
+      "dependencies": {
+        "scope": "objects",
+        "refs": [
+          {
+            "type": "drumKit",
+            "id": "kit-taiko"
+          }
+        ]
+      },
+      "data": {
+        "annotation": "An opaque, non-executable host hint referencing a stable drum kit ID."
+      }
+    }
+  },
+  "drumKits": [
+    {
+      "id": "kit-taiko",
+      "name": "祭り太鼓キット",
+      "localizedNames": {
+        "en": "Festival Taiko Kit"
+      },
+      "soundSlotIds": [
+        "slot-o-daiko",
+        "slot-shime",
+        "slot-unused"
+      ]
+    },
+    {
+      "id": "kit-latin",
+      "name": "ラテンキット",
+      "localizedNames": {
+        "en": "Latin Kit",
+        "es": "Kit latino"
+      },
+      "soundSlotIds": [
+        "slot-conga",
+        "slot-shaker",
+        "slot-unused"
+      ]
+    }
+  ]
+}
